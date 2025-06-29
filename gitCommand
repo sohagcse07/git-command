@@ -1,0 +1,172 @@
+# Git Commands Cheat Sheet with explanations
+
+# 1. git init
+git init
+# Initialize a new Git repository in the current directory
+
+# 2. git clone <repo-url>
+git clone https://github.com/user/repo.git
+# Clone a remote repository to your local machine
+
+# 3. git status
+git status
+# Show the current status of your working directory and staging area
+
+# 4. git add <file>
+git add filename.txt
+# Add file(s) to the staging area to be committed
+
+# 5. git add .
+git add .
+# Add all changed files in the current directory to the staging area
+
+# 6. git commit -m "message"
+git commit -m "Initial commit"
+# Commit staged changes with a descriptive message
+
+# 7. git branch
+git branch
+# List all local branches
+
+# 8. git branch -a
+git branch -a
+# List all local and remote branches
+
+# 9. git branch <branch-name>
+git branch feature-branch
+# Create a new branch named 'feature-branch'
+
+# 10. git checkout <branch-name>
+git checkout feature-branch
+# Switch to the branch 'feature-branch'
+
+# 11. git checkout -b <branch-name>
+git checkout -b new-feature
+# Create and switch to a new branch in one command
+
+# 12. git merge <branch-name>
+git merge feature-branch
+# Merge 'feature-branch' into the current branch
+
+# 13. git pull origin <branch-name>
+git pull origin main
+# Fetch latest changes from remote 'main' branch and merge into current branch
+
+# 14. git push origin <branch-name>
+git push origin main
+# Push your local 'main' branch changes to the remote repository
+
+# 15. git push -u origin <branch-name>
+git push -u origin feature-branch
+# Push branch and set upstream tracking for easier future pushes/pulls
+
+# 16. git remote -v
+git remote -v
+# Show remote repositories and their URLs
+
+# 17. git remote add origin <repo-url>
+git remote add origin https://github.com/user/repo.git
+# Add a remote repository named 'origin'
+
+# 18. git stash
+git stash
+# Temporarily save your uncommitted changes and clean working directory
+
+# 19. git stash pop
+git stash pop
+# Restore the last stashed changes and remove them from stash list
+
+# 20. git branch -d <branch-name>
+git branch -d feature-branch
+# Delete the local branch 'feature-branch' (only if merged)
+
+# 21. git branch -D <branch-name>
+git branch -D feature-branch
+# Force delete the local branch 'feature-branch' even if not merged
+
+# 22. git push origin --delete <branch-name>
+git push origin --delete feature-branch
+# Delete the remote branch 'feature-branch' from GitHub
+
+# 23. git log
+git log
+# View commit history
+
+# 24. git diff
+git diff
+# Show unstaged changes between working directory and index
+
+# 25. git reset --hard
+git reset --hard
+# Discard all local changes (dangerous - be careful!)
+
+# 26. git fetch
+git fetch
+# Download latest changes from remote without merging
+
+# 27. git checkout <commit-hash>
+git checkout a1b2c3d4
+# Switch to a specific commit (detached HEAD state)
+
+# 28. git tag <tag-name>
+git tag v1.0
+# Create a tag named 'v1.0'
+
+# 29. git push origin <tag-name>
+git push origin v1.0
+# Push a tag to the remote repository
+
+# 30. git config --global user.name "Your Name"
+git config --global user.name "Sohag Hossain"
+# Set your Git username globally
+
+# 31. git config --global user.email "your-email@example.com"
+git config --global user.email "sohag@example.com"
+# Set your Git email globally
+
+# End of Git Commands Cheat Sheet
+
+
+git init
+git add example.txt
+git commit -m "Add example.txt file"
+git remote add origin <repo-url>   # only once
+git push -u origin main
+
+
+
+git config --global user.name "[firstname lastname]"
+git config --global user.email "[valid.email]"
+git config --global color.ui auto
+git init
+git clone [url]
+git status
+git add [file]
+git reset [file]
+git diff
+git diff --staged
+git commit -m "[descriptive message]"
+git branch
+git branch [branch-name]
+git checkout
+git merge [branch]
+git log
+git log branchB...branchA
+git log --follow [file]
+git diff branchB...branchA
+git show [SHA]
+git rm [file]
+git mv [existing-path] [new-path]
+git log --stat -H
+git config --global core.excludesfile [file]
+git remote add [alias] [url]
+git fetch [alias]
+git merge [alias]/[branch]
+git push [alias] [branch]
+git pull
+git rebase [branch]
+git reset --hard [commit]
+git stash
+git stash list
+git stash pop
+git stash drop
