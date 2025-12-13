@@ -1,5 +1,6 @@
 # Git Commands Cheat Sheet with explanations
 #  git rm -r --cached .
+#   git rm --cached file name
 #  rm -rf .git
 
 # 1. git init
