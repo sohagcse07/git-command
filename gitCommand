@@ -1,3 +1,6 @@
+const targetViewId = 1179; // database ID of your target view
+        return !!this.fields?.length && this.env?.config?.viewType === "list" && this.env?.config?.viewId === targetViewId;
+       
 # Git Commands Cheat Sheet with explanations
 #  git rm -r --cached .
 #   git rm --cached file name
