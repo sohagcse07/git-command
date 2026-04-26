@@ -9,6 +9,9 @@ const targetViewId = 1179; // database ID of your target view
 #to see last commit and log like what change 
 git diff <6494f7e 19a8a11>
 
+
+# git clone --depth 1 --branch branch name
+
 # 1. git init
 git init
 # Initialize a new Git repository in the current directory
